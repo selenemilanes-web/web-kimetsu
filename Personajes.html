@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title id="PortfolioKimetsu.html">Kimetsu no yaiba (Demon Slayer)</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbsWJ9clxMaqGem7YYSTRQfqibqlb1AQ-hIwNUVL-pmPcE08KBoRY0ATqvdg77pGuk7c&usqp=CAU">
+  <script src="https://kit.fontawesome.com/c53521993b.js" crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script defer src="Index.js"></script>
+  <script defer src="Login.js"></script>
+  <script defer src="Register.js"></script>
+  <script defer src="Logout.js"></script>
+  <link rel="stylesheet" href="../css/bootstrapSelene.css">
+</head>
+
+<body>
+<main>
+  <header>
+    <div class="text-center bg-dark">
+      <a class="img-fluid justify-content-sm-center"><img class="w-25 h-25" src="images/Demon_Slayer_Logo.webp" title="Logo Demon Slayer" alt="Logo image" id="logo"></a>
+    </div>
+  </header>
+
+  <ul class="nav nav-tabs justify-content-center bg-dark text-light flex-column flex-sm-row sticky-sm-top">
+    <li class="nav-item">
+      <a class="nav-link flex-sm-fill text-center text-light text-uppercase" aria-current="page" href="Home.html"><i class="fa-solid fa-house"></i></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link flex-sm-fill text-center text-uppercase" href="Historia.html">Historia</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active flex-sm-fill text-center text-uppercase" href="Personajes.html">Personajes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link flex-sm-fill text-center text-uppercase" href="Videojuegos.html">Videojuegos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link flex-sm-fill text-center text-uppercase" href="RecentNews.html">Noticias recientes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link flex-sm-fill text-center text-uppercase" href="Votaciones.html">Votaciones</a>
+    </li>
+
+    <li class="nav-item dropdown text-center">
+      <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Login
+      </a>
+
+      <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+        <form>
+          <li>
+            <h5 class="text-center mb-4 mt-2 text-uppercase">Inicia Sesión</h5>
+            <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+              <label class="text-center" title="Username">Nombre de usuario</label>
+              <input type="text" class="input-group-text" id="userlogin" placeholder="Introduce usuario" title="Introduce tu usuario">
+            </div>
+          </li>
+          <li>
+            <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+              <label class="text-center" title="Password">Contraseña</label>
+              <input type="password" class="input-group-text" id="passwordlogin" placeholder="Introduce contraseña" title="Introduce tu contraseña">
+            </div>
+          </li>
+          <li>
+            <div class="text-center mt-2 mb-2">
+              <span title="¿No recuerdas tu contraseña? Pulsa aquí"> <a href="#">Has olvidado la contraseña?</a></span>
+            </div>
+          </li>
+          <li>
+            <div class="text-sm-center row justify-content-center">
+              <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Accede a tu cuenta" id="login">LOGIN</button>
+              <div class="container justify-content-center text-center mt-2 mb-2">
+                <input class="form-check-input col-sm-10 col-12" type="checkbox" value=""> Remember me
+              </div>
+              <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Sal de tu cuenta" id="logout">LOGOUT</button>
+            </div>
+          </li>
+        </form>
+      </ul>
+
+    <li class="nav-item dropdown text-center">
+      <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Registrate
+      </a>
+
+      <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+        <form>
+          <li>
+            <h5 class="text-center mb-4 mt-2 text-uppercase">Regístrate</h5>
+            <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+              <label class="text-center" title="Nombre de usuario">Nombre de usuario</label>
+              <input type="text" class="input-group-text" id="userregister" placeholder="Introduce nombre de usuario" title="Introduce tu usuario o nickname">
+            </div>
+          </li>
+          <li>
+            <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+              <label class="text-center" title="Contraseña">Contraseña</label>
+              <input type="password" class="input-group-text" id="passwordregister" placeholder="Introduce contraseña" title="Introduce tu contraseña">
+            </div>
+          </li>
+          <li>
+            <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+              <label class="text-center" title="Correo electrónico">Correo electrónico</label>
+              <input type="email" class="input-group-text" id="emailregister" placeholder="Introduce e-mail" title="Introduce tu correo electrónico">
+            </div>
+          </li>
+          <li>
+            <div class="text-sm-center row justify-content-center">
+              <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Accede a tu cuenta" id="registro">REGISTRO</button>
+            </div>
+          </li>
+        </form>
+      </ul>
+
+  </ul>
+
+
+  <div class="row flex-sm-row">
+    <div class="col-sm-2 bg-secondary">
+      <h2 class="text-center mt-5">Índice</h2>
+      <ul class="nav nav-tabs nav-justified navbar-toggler ms-1 mt-3 m-sm-0 flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#PersonajesPrincipales">Personajes principales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Pilares">Los Pilares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#12lunas">Las 12 Lunas</a>
+        </li>
+      </ul>
+
+      <h2 class="text-center mt-5 mb-4">Contacto</h2>
+      <p class="text-center"><i class="fa-brands fa-discord"><a class="text-decoration-none" href="https://discord.com/" target="_blank">&nbsp Discord</i></a></p>
+      <p class="text-center"><i class="fa-brands fa-instagram"><a class="text-decoration-none" href="https://www.instagram.com/accounts/login/" target="_blank">&nbsp Instagram</i></a></p>
+      <p class="text-center"><i class="fa-brands fa-tiktok"><a class="text-decoration-none" href="https://www.tiktok.com/es/" target="_blank">&nbsp Tik Tok</i></a></p>
+    </div>
+
+    <div class="col-sm-8 bg-dark">
+      <div class="row text-center">
+        <div class="col-sm mt-5">
+          <h2 id="PersonajesPrincipales" class="mb-5 text-light shadowwhite">Personajes principales </h2>
+          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/TanjiroPersonaje.png" class="d-block w-100" alt="Tanjiro Kamado">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="bg-dark text-light shadow">Tankiro Kamado</h4>
+                  <p class="bg-white text-dark shadow p-2">Un joven con un gran corazón. Vivía feliz con su madre y sus hermanos, hasta que un demonio atacó a toda su familia mientras él estaba fuera de casa.
+                    Se une al cuerpo de matademonios para hacer que su hermana Nezuko, ahora convertida en demonio, vuelva a ser humana y también para vengar la muerte de
+                    su familia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/NezukoPersonaje.png" class="d-block w-100" alt="Nezuko Kamado">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="bg-dark text-light text shadow">Nezuko Kamado</h4>
+                  <p class="bg-white text-dark shadow p-2">La hermana de Tanjirō, convertida en demonio.
+                    A pesar de ser un demonio, nunca ataca a los humanos gracias a la terapia hipnótica de Urokodaki y a su fuerza de voluntad.
+                    Acompaña a Tanjirō en sus combates contra los demonios y ayuda con sus propios poderes demoníacos.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/ZenitsuPersonaje.png" class="d-block w-100" alt="Zenitsu Agatsuma">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="bg-dark text-light shadow">Zenitsu Agatsuma</h4>
+                  <p class="bg-white text-dark shadow p-2">Se une al cuerpo de matademonios al mismo tiempo que Tanjirō e Inosuke.
+                    Tiene un gran sentido del oído y puede identificar los ruidos que hacen otras personas o demonios.
+                    Cuando se muere de miedo en un combate, se duerme y su personalidad cambia completamente a la de un espadachín que
+                    puede desatar la «respiración del trueno».</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/InosukePersonaje.png" class="d-block w-100" alt="Inosuke Hashibira">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="bg-dark text-light shadow">Inosuke Hashibira</h4>
+                  <p class="bg-white text-dark shadow p-2">Se une al cuerpo de matademonios al mismo tiempo que Tanjirō y Zenitsu.
+                    Es sumamente agresivo y lleva una cabeza de jabalí puesta encima. Siempre se lanza sin pensarlo a la
+                    batalla con su «respiración de la bestia».</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row flex-sm-row flex-column">
+        <div class="col-sm">
+          <h2 id="Pilares" class="mt-5 mb-5 text-light text-center shadowwhite">Los Pilares</h2>
+          <p class="text-light text-center ms-3 me-3"> Los <span class="fw-bold">Pilares</span> (柱はしら, Hashira) son un grupo compuesto
+            por los mejores y más poderosos espadachines pertenecientes al <span class="text-decoration-underline">Cuerpo de Exterminio de
+              Demonios</span>, quienes sirven como <span class="fst-italic">guerreros de élite</span>.</p>
+          <p>Cada uno posee un distinto tipo de estilo de respiración que fueron capaces de perfeccionar entrenando a muerte.</p>
+
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+          <div class="col-sm card ms-sm-2 mt-sm-2">
+              <img src="images/GiyuTomioka.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Giyu Tomioka</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/ShinobuKocho.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Shinobu Kocho</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/KyojuroRengoku.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Kyojuro Rengoku</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/TengenUzui.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Tengen Uzui</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/MitsuriKanroji.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Mitsuri Kanroji</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/MuichiroTokito.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Muichiro Tokito</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/GyomeiHimejima.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Gyomei Himejima</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/ObanaiIguro.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Obanai Iguro</p>
+              </div>
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/SanemiShinazugawa.jpg" class="w-100 h-100 card-img-top">
+              <div class="card-body">
+                <p class="card-text text-center">Sanemi Shinazugawa</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-sm text-white mb-4">
+        <h2 id="12lunas" class="mb-5 text-light text-center shadowwhite">Las 12 Lunas</h2>
+          <div class="ms-5 me-5 mb-5">
+          <p><span class="fst-italic">Doce Lunas Demoníacas</span> (十じゅう二に鬼き月づき, Jūnikizuki) fue una organización compuesta por un grupo de doce Demonios que perseguían
+            el <span class="fw-bold">objetivo de encontrar el Lirio de la Araña Azul.</span> </p>
+          <p> La organización fue creada y liderada por <span class="fw-bold">Muzan Kibutsuji</span>; los demonios que la componían estaban bajo el total de
+            Muzan y éste se encargaba de brindarles una porción considerable de su sangre como recompensa al seguir sus ordenes. La mayoría
+            de sus operaciones y reuniones se llevaban a cabo en la Fortaleza Dimensional Infinita. Estuvieron activos por cientos de años
+            hasta su destrucción tras darse inicio al ataque a la fortaleza.</p>
+          <p>Las Doce Lunas Demoníacas se dividían en dos grupos, las <span class="text-decoration-underline">Lunas Superiores</span> (上じょう弦げん, Jōgen, también llamadas
+            Lunas crecientes) y las <span class="text-decoration-underline">Lunas Inferiores</span> (下か弦げん, Kagen, también llamadas Lunas Menguantes?). Su principal característica
+            era el número que los identifica como una de las doce Lunas el cual estaba impreso en sus ojos; uno en el caso de las
+            Lunas inferiores y dos en los ojos de las Lunas Superiores.</p>
+          </div>
+
+          <h4 class="mb-3 text-light text-center shadowwhite">Lunas Inferiores</h4>
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior1Enmu.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior2Rokuro.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior3Wakuraba.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+          </div>
+
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior4Mukago.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior5Rui.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaInferior6Kamanue.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+          </div>
+
+          <h4 class="mb-3 mt-5 text-light text-center shadowwhite">Lunas Superiores</h4>
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior1Kokushibo.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior2Douma.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior3Akaza.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+          </div>
+
+          <div class="row flex-sm-row flex-column ms-sm-4 me-sm-5 ms-5 me-5 mb-4">
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior4Nakime.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior5Gyokko.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+            <div class="col-sm card ms-sm-2 mt-2">
+              <img src="images/LunaSuperior6Daki.webp" class="w-100 h-100 card-img-top Moons">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+
+
+    <div class="col-sm-2 bg-secondary text-center">
+      <h2 class="mt-5">Widgets</h2>
+      <div class="text-center ms-3 me-3 mt-4 shadow border border-3 border-light btn-outline-light p-2 text rounded-3 h6" id="clock">
+        <p id="fecha"></p>
+        <p id="reloj" class="h1"></p>
+      </div>
+      <button id="slideclock" class="btn-secondary text-center mt-2 mb-4 border border-2 rounded-pill">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+
+      <h2 class="mt-2 mb-4">Avisos</h2>
+      <p id="registeredusers" class="ms-3 me-3 mb-5"></p>
+    </div>
+
+  </div>
+
+  <div class="row text-center bg-dark text-light">
+    <footer class="mt-4"><p>Autora: ©Selene Milanés Rodríguez</p>
+      <button id="estiradeinosuke" class="btn-outline-danger">Estira de Inosuke</button>
+      <div>
+        <img src="images/pinsinfondo.png" id="pin" title="Tanjiro e Inosuke" class="w-25 h-25 rounded-circle position-relative">
+      </div>
+      <p> ©DEMON SLAYER KIMETSU NO YAIBA by ©Koyoharu Gotoge</p>
+    </footer>
+  </div>
+
+</main>
+</body>
+</html>

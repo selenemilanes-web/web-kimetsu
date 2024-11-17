@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="PortfolioKimetsu.html">Kimetsu no yaiba (Demon Slayer)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbsWJ9clxMaqGem7YYSTRQfqibqlb1AQ-hIwNUVL-pmPcE08KBoRY0ATqvdg77pGuk7c&usqp=CAU">
+    <script src="https://kit.fontawesome.com/c53521993b.js" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script defer src="Index.js"></script>
+    <script defer src="Login.js"></script>
+    <script defer src="Register.js"></script>
+    <script defer src="Logout.js"></script>
+    <link rel="stylesheet" href="../css/bootstrapSelene.css">
+</head>
+
+<body>
+<main>
+    <header>
+        <div class="text-center bg-dark">
+            <a class="img-fluid justify-content-sm-center"><img class="w-25 h-25" src="images/Demon_Slayer_Logo.webp" title="Logo Demon Slayer" alt="Logo image" id="logo"></a>
+        </div>
+    </header>
+
+    <ul class="nav nav-tabs justify-content-center bg-dark text-light flex-column flex-sm-row sticky-sm-top">
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-light text-uppercase" aria-current="page" href="Home.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Historia.html">Historia</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Personajes.html">Personajes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Videojuegos.html">Videojuegos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active flex-sm-fill text-center text-uppercase" href="RecentNews.html">Noticias recientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Votaciones.html">Votaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="VotaAquí.html">Vota aquí</a>
+        </li>
+
+        <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+                <form>
+                    <li>
+                        <h5 class="text-center mb-4 mt-2 text-uppercase">Inicia Sesión</h5>
+                        <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Username">Nombre de usuario</label>
+                            <input type="text" class="input-group-text" id="userlogin" placeholder="Introduce usuario" title="Introduce tu usuario">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Password">Contraseña</label>
+                            <input type="password" class="input-group-text" id="passwordlogin" placeholder="Introduce contraseña" title="Introduce tu contraseña">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-center mt-2 mb-2">
+                            <span title="¿No recuerdas tu contraseña? Pulsa aquí"> <a href="#">Has olvidado la contraseña?</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-sm-center row justify-content-center">
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Accede a tu cuenta" id="login">LOGIN</button>
+                            <div class="container justify-content-center text-center mt-2 mb-2">
+                                <input class="form-check-input col-sm-10 col-12" type="checkbox" value=""> Remember me
+                            </div>
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Sal de tu cuenta" id="logout">LOGOUT</button>
+                        </div>
+                    </li>
+                </form>
+            </ul>
+
+        <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registrate
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+                <form>
+                    <li>
+                        <h5 class="text-center mb-4 mt-2 text-uppercase">Regístrate</h5>
+                        <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Nombre de usuario">Nombre de usuario</label>
+                            <input type="text" class="input-group-text" id="userregister" placeholder="Introduce nombre de usuario" title="Introduce tu usuario o nickname">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Contraseña">Contraseña</label>
+                            <input type="password" class="input-group-text" id="passwordregister" placeholder="Introduce contraseña" title="Introduce tu contraseña">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Correo electrónico">Correo electrónico</label>
+                            <input type="email" class="input-group-text" id="emailregister" placeholder="Introduce e-mail" title="Introduce tu correo electrónico">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-sm-center row justify-content-center">
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50" title="Accede a tu cuenta" id="registro">REGISTRO</button>
+                        </div>
+                    </li>
+                </form>
+            </ul>
+
+    </ul>
+
+
+    <div class="row flex-sm-row">
+        <div class="col-sm-2 bg-secondary">
+            <h2 class="text-center mt-5">Noticias</h2>
+            <ul class="nav nav-tabs nav-justified navbar-toggler ms-1 mt-3 m-sm-0 flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#21abril">21 Abril 2022</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#17abril">17 Abril 2022</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#30febrero">30 Febrero 2022</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#25febrero">25 Febrero 2022</a>
+                </li>
+            </ul>
+
+            <h2 class="text-center mt-5 mb-4">Contacto</h2>
+            <p class="text-center"><i class="fa-brands fa-discord"><a class="text-decoration-none" href="https://discord.com/" target="_blank">&nbsp Discord</i></a></p>
+            <p class="text-center"><i class="fa-brands fa-instagram"><a class="text-decoration-none" href="https://www.instagram.com/accounts/login/" target="_blank">&nbsp Instagram</i></a></p>
+            <p class="text-center"><i class="fa-brands fa-tiktok"><a class="text-decoration-none" href="https://www.tiktok.com/es/" target="_blank">&nbsp Tik Tok</i></a></p>
+        </div>
+
+        <div class="col-sm-8 bg-dark">
+            <div class="row text-center">
+                <div class="col-sm mt-5">
+
+                    <article class="text-white ms-5 me-5 mb-5">
+                        <p class="text-end fst-italic" id="21abril" >21 Abr 2022 | 19:15 h</p>
+                        <h2 class="mb-3 text-uppercase border border-danger border-3 p-2">“Kimetsu no Yaiba”: ¿qué veremos en la tercera temporada del anime?</h2>
+                        <h4>Como era de esperarse, Tanjiro y sus amigos lograron sobrevivir a la última batalla del arco del Distrito del Entretenimiento,
+                            pero él no tendrá mucho tiempo para descansar.</h4>
+                        <img src="images/FotoNoticia1.webp" title="Mitsuri Kanroji" class="w-50 rounded-3 img-thumbnail mt-3 mb-3">
+                        <p>El fenómeno que es <span class="fw-bold">“Kimetsu no Yaiba”</span> hoy en día gracias a la notable popularidad que maneja la franquicia siempre dará de qué hablar.
+                            En esta ocasión, corresponde darle una mirada a lo que se viene. Hace unos días, se <span class="fst-italic">reveló el PV de “Kimetsu no Yaiba: Katanakaji no Sato-hen”</span>,
+                            la tercera temporada del anime. Gracias a las adaptaciones anteriores de Ufotable y al manga, es posible especular sobre <span class="text-decoration-underline">qué esperar de esta nueva entrega<span>.
+                            <span class="fw-bold">Alerta de spoilers.</span></p>
+                        <h3>¿Qué arco cubrirá la nueva temporada de “Kimetsu no Yaiba”?</h3>
+                        <p>“Kimetsu no Yaiba: Katanakaji no Sato-hen” se traduce como el arco de la Aldea del Herrero, el cual comienza oficialmente en el capítulo 100 del manga, “¡Ve a la aldea!”.
+                            La temporada anterior, <span class="text-decoration-underline">“Kimetsu no Yaiba: Yuukaku-hen”</span>, llegó a cubrir hasta el capítulo 97, por lo cual lo que sigue debería comenzar en aquel punto. Recordemos que vimos a Akaza,
+                            la tercera luna creciente que asesinó a Rengoku, ser convocado por Muzan tras la derrota de Gyutaro.</p>
+                        <p>El arco de la <span class="fst-italic">Aldea del Herrero</span> comprende desde el <span class="fw-bold">capítulo 100 hasta el 127 del manga</span>. De acuerdo a lo visto con las últimas dos adaptaciones al anime, es muy probable que “Kimetsu no Yaiba:
+                            Katanakaji no Sato-hen” se concentre estrictamente en lo que dura el arco en la obra original.</p>
+                    </article>
+
+                    <div class="row flex-sm-row flex-column">
+                        <div class="col-sm">
+                            <h2 class="text-light text-center shadowwhite p-1">&nbsp</h2>
+                        </div>
+                    </div>
+
+                    <article class="text-white ms-5 me-5 mt-5 mb-5">
+                        <p class="text-end fst-italic" id="17abril" >17 Abr 2022 | 17:33 h</p>
+                        <h2 class="mb-3 text-uppercase border border-danger border-3 p-2">DEMON SLAYER: THE HINOKAMI CHRONICLES CONFIRMA EL PESO QUE TENDRÁ PARA NINTENDO SWITCH</h2>
+                        <h4>La desarrolladora a cargo del título inspirado en el anime también anunció que agregarán un nuevo DLC de pago.</h4>
+                        <img src="images/FotoNoticia2.jpg" title="Kimetsu No Yaiba" class="w-50 rounded-3 img-thumbnail mt-3 mb-3">
+                        <p>Demon Slayer: The Hinokami Chronicles fue lanzado el año pasado para consolas <span class="fst-italic">PlayStation, Xbox y PC</span>, y desde entonces es un éxito rotundo para los fans del anime. Para buena fortuna de los usuarios de Nintendo Switch, los desarrolladores a cargo confirmaron una versión para la plataforma, y ahora se conoce el <span class="fw-bold">espacio que se requiere para su descarga</span>.
+
+                            Recientemente se publicó el trailer de la nueva temporada de Demon Slayer, y los aficionados de la saga están emocionados. Pese a ello, todavía queda un tiempo para que se pueda disfrutar de los nuevos episodios.
+
+                            La buena noticia que llega es que, además de las versiones que están disponibles del juego basado en el anime, la Nintendo Switch tendrá su entrega para que toda la comunidad pueda entretenerse, mientras esperan el arco de La Aldea del Herrero.</p>
+                        <p>Si te encuentras interesado en la versión para la consola híbrida, debes saber que necesitarás aproximadamente 8.7 GB de espacio para su descarga, según la misma eShop.
+
+                            Por otro lado, el título de <span class="text-decoration-underline">Demon Slayer recibirá un nuevo DLC de pago con más personajes </span> para su modo Versus, contenido que estará habilitado para todas sus versiones.</p>
+                        <p>Demon Slayer: The Hinokami Chronicles está disponible en PlayStation 4 y 5, Xbox Series X/S, Xbox One y PC a través de Steam, y llegará a Switch el 10 de junio.</p>
+                    </article>
+
+                    <div class="row flex-sm-row flex-column">
+                        <div class="col-sm">
+                            <h2 class="text-light text-center shadowwhite p-1">&nbsp</h2>
+                        </div>
+                    </div>
+
+                    <article class="text-white ms-5 me-5 mt-5 mb-5">
+                        <p class="text-end fst-italic" id="30febrero">30 Feb 2022 | 16:46 h</p>
+                        <h2 class="mb-3 text-uppercase border border-danger border-3 p-2">Kimetsu no Yaiba, temporada 3: estreno, qué pasará y qué arco se adaptará</h2>
+                        <h4>El anime se ha ganado la popularidad de los fans en poco tiempo. Entérate todo lo que se sabe sobre su próxima entrega que promete ser una de las mejores.</h4>
+                        <img src="images/FotoNoticia4.jpg" title="Demon Slayer Season 3" class="w-50 rounded-3 img-thumbnail mt-3 mb-3">
+                        <p>Este domingo 13 de febrero <span class="text-decoration-underline">se dio fin a uno de los animes más populares de 2022, se trata de Kimetsu no Yaiba: yuukaku-hen</span>. Ahora, para la alegría de los fans, el estudio <span class="fw-bold">Ufotable</span>, productora encargada de la realización del anime, <span class="text-decoration-underline">ha confirmado que el shonen continuará con una tercera temporada</span> que seguirá adaptando el manga creado por <span class="fw-bold">Koyoharu Gotouge</span>.
+
+                            Pese a que todavía no hay una fecha de estreno estimada, los seguidores se preguntan qué pasará en la nueva saga de <b>Demon Slayer</b>.</p>
+                        <h3>¿Qué veremos en Kimetsu no Yaiba, temporada 3?</h3>
+                        <p>Según el adelanto compartido en redes sociales, la tercera temporada de <b>Kimetsu no Yaiba</b> adaptará el arco de la <b>Aldea del Herrero</b>, en el que finalmente se conocerá acerca del pasado de Muichiro Tokito, el pilar de la niebla, quien se ha caracterizado por ser uno de los cazadores de demonios más callados y tranquilos.
+
+                            Asimismo, se sabe que el anime explorará <span class="fst-italic">cómo fue la vida de Mitsuri Kanroji, el pilar del amor</span>. Esta joven cazadora, al contrario de Tokito, <span class="text-decoration-underline">es muy carismática y extrovertida</span>, por lo que se ha ganado el cariño del fandom.</p>
+                    </article>
+
+                    <div class="row flex-sm-row flex-column">
+                        <div class="col-sm">
+                            <h2 class="text-light text-center shadowwhite p-1">&nbsp</h2>
+                        </div>
+                    </div>
+
+                    <article class="text-white ms-5 me-5 mt-5 mb-2">
+                        <p class="text-end fst-italic" id="25febrero" >25 Feb 2022 | 16:46 h</p>
+                        <h2 class="mb-3 text-uppercase border border-danger border-3 p-2">KIMETSU NO YAIBA: CONOCE MÁS SOBRE EL ANIME DE CAZADORES DE DEMONIOS</h2>
+                        <h4>Kimetsu no yaiba es el anime de demonios y cazadores que está rompiéndola en todo el mundo.</h4>
+                        <img src="images/FotoNoticia3.jpg" title="Demon Slayer" class="w-50 rounded-3 img-thumbnail mt-3 mb-3">
+                        <p><span class="fw-bold">Kimetsu no yaiba</span> es el anime que está <span class="text-decoration-underline">causando furor en todo el mundo</span> no solo por su trama sino también por <span class="fst-italic">la gran calidad de animación con la que cuenta</span>.</p>
+                        <p>Kimetsu no yaiba sigue las aventuras de <span class="fw-bold">Tanjirō Kamado</span>, un adolescente cuya familia fue cruelmente asesinada por un Demonio, el cual convirtió a su hermana <span class="fw-bold">Nezuko</span> en una de estas criaturas, obligando a Tanjirō a emprender un viaje para cazar a estos seres y, de paso, ayudar a su hermana a recuperar su humanidad. En el camino, se les unirán <b>Zenitsu e Inosuke</b>, quienes los acompañarán en su búsqueda.</p>
+                        <video controls class="w-75 h-50 mb-5 mt-4">
+                            <source src="vids/Noticia4.mp4" type="video/mp4">
+                        </video>
+                    </article>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="col-sm-2 bg-secondary text-center">
+            <h2 class="mt-5">Widgets</h2>
+            <div class="text-center ms-3 me-3 mt-4 shadow border border-3 border-light btn-outline-light p-2 text rounded-3 h6" id="clock">
+                <p id="fecha"></p>
+                <p id="reloj" class="h1"></p>
+            </div>
+            <button id="slideclock" class="btn-secondary text-center mt-2 mb-4 border border-2 rounded-pill">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+
+            <h2 class="mt-2 mb-4">Avisos</h2>
+            <p id="registeredusers" class="ms-3 me-3 mb-5"></p>
+        </div>
+
+    </div>
+
+    <div class="row text-center bg-dark text-light">
+        <footer class="mt-4"><p>Autora: ©Selene Milanés Rodríguez</p>
+            <button id="estiradeinosuke" class="btn-outline-danger">Estira de Inosuke</button>
+            <div>
+                <img src="images/pinsinfondo.png" id="pin" title="Tanjiro e Inosuke" class="w-25 h-25 rounded-circle position-relative">
+            </div>
+            <p> ©DEMON SLAYER KIMETSU NO YAIBA by ©Koyoharu Gotoge</p>
+        </footer>
+    </div>
+
+</main>
+</body>
+</html>

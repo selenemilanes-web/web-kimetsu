@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="PortfolioKimetsu.html">Kimetsu no yaiba (Demon Slayer)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <link rel="shortcut icon"
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbsWJ9clxMaqGem7YYSTRQfqibqlb1AQ-hIwNUVL-pmPcE08KBoRY0ATqvdg77pGuk7c&usqp=CAU">
+    <script src="https://kit.fontawesome.com/c53521993b.js" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script defer src="Index.js"></script>
+    <script defer src="Login.js"></script>
+    <script defer src="Register.js"></script>
+    <script defer src="Logout.js"></script>
+    <link rel="stylesheet" href="../css/bootstrapSelene.css">
+</head>
+
+<body>
+<main>
+    <header>
+        <div class="text-center bg-dark">
+            <a class="img-fluid justify-content-sm-center"><img class="w-25 h-25" src="images/Demon_Slayer_Logo.webp"
+                                                                title="Logo Demon Slayer" alt="Logo image"
+                                                                id="logo"></a>
+        </div>
+    </header>
+
+    <ul class="nav nav-tabs justify-content-center bg-dark text-light flex-column flex-sm-row sticky-sm-top">
+        <li class="nav-item">
+            <a class="nav-link active flex-sm-fill text-center bg-white text-dark text-uppercase" aria-current="page"
+               href="Home.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Historia.html">Historia</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Personajes.html">Personajes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Videojuegos.html">Videojuegos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="RecentNews.html">Noticias recientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="Votaciones.html">Votaciones</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link flex-sm-fill text-center text-uppercase" href="VotaAquí.html">Vota aquí</a>
+        </li>
+
+        <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+                Login
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+                <form>
+                    <li>
+                        <h5 class="text-center mb-4 mt-2 text-uppercase">Inicia Sesión</h5>
+                        <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Username">Nombre de usuario</label>
+                            <input type="text" class="input-group-text" id="userlogin" placeholder="Introduce usuario"
+                                   title="Introduce tu usuario">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Password">Contraseña</label>
+                            <input type="password" class="input-group-text" id="passwordlogin"
+                                   placeholder="Introduce contraseña" title="Introduce tu contraseña">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-center mt-2 mb-2">
+                            <span title="¿No recuerdas tu contraseña? Pulsa aquí"> <a href="#">Has olvidado la contraseña?</a></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-sm-center row justify-content-center">
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50"
+                                    title="Accede a tu cuenta" id="login">LOGIN
+                            </button>
+                            <div class="container justify-content-center text-center mt-2 mb-2">
+                                <input class="form-check-input col-sm-10 col-12" type="checkbox" value=""
+                                       id="remembermelogin"> Remember me
+                            </div>
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50"
+                                    title="Sal de tu cuenta" id="logout">LOGOUT
+                            </button>
+                        </div>
+                    </li>
+                </form>
+            </ul>
+
+        <li class="nav-item dropdown text-center">
+            <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+                Registrate
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark text-center ms-5">
+                <form>
+                    <li>
+                        <h5 class="text-center mb-4 mt-2 text-uppercase">Regístrate</h5>
+                        <div for="user" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Nombre de usuario">Nombre de usuario</label>
+                            <input type="text" class="input-group-text" id="userregister"
+                                   placeholder="Introduce nombre de usuario" title="Introduce tu usuario o nickname">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="password" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Contraseña">Contraseña</label>
+                            <input type="password" class="input-group-text" id="passwordregister"
+                                   placeholder="Introduce contraseña" title="Introduce tu contraseña">
+                        </div>
+                    </li>
+                    <li>
+                        <div for="email" class="input-group-sm my-1 ms-sm-5 text-center me-sm-5 me-5 ms-5">
+                            <label class="text-center" title="Correo electrónico">Correo electrónico</label>
+                            <input type="email" class="input-group-text" id="emailregister"
+                                   placeholder="Introduce e-mail" title="Introduce tu correo electrónico">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="text-sm-center row justify-content-center">
+                            <button type="button" class="btn btn-outline-login rounded-pill mt-2 mb-2 w-50 h-50"
+                                    title="Accede a tu cuenta" id="registro">REGISTRO
+                            </button>
+                        </div>
+                    </li>
+                </form>
+            </ul>
+
+    </ul>
+
+
+    <div class="row flex-sm-row">
+        <div class="col-sm-2 bg-secondary">
+            <h2 class="text-center mt-5">Índice</h2>
+            <ul class="nav nav-tabs nav-justified navbar-toggler ms-1 mt-3 m-sm-0 flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#ConocePersonajes">Conoce a los personajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#DescubreHistoria">Descubre su historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#JuegaVideojuegos">Juega a sus videojuegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Consultanoticias">Consulta las últimas noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#AñadeAnime">Consulta las votaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ConsultaVotaciones">Añade tu anime</a>
+                </li>
+            </ul>
+
+            <h2 class="text-center mt-5 mb-4">Contacto</h2>
+            <p class="text-center"><i class="fa-brands fa-discord"><a class="text-decoration-none"
+                                                                      href="https://discord.com/" target="_blank">&nbsp
+                Discord</i></a></p>
+            <p class="text-center"><i class="fa-brands fa-instagram"><a class="text-decoration-none"
+                                                                        href="https://www.instagram.com/accounts/login/"
+                                                                        target="_blank">&nbsp Instagram</i></a></p>
+            <p class="text-center"><i class="fa-brands fa-tiktok"><a class="text-decoration-none"
+                                                                     href="https://www.tiktok.com/es/" target="_blank">&nbsp
+                Tik Tok</i></a></p>
+        </div>
+
+        <div class="col-sm-8 bg-dark text-light">
+            <div class="row text-center">
+                <div class="col-sm mt-5">
+                    <h2 id="ConocePersonajes" class="mb-3">Conoce a los personajes </h2>
+                    <div id="carouselDark" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="Personajes.html"><img src="images/AsesinosDemonios.webp" class="w-75"
+                                                               alt="Los Asesinos de demonios"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark text-light shadow">Los Asesinos de Demonios</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="Personajes.html"><img src="images/LosPilares.webp" class="w-75" alt="Pilares"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark text-light text shadow">Los Pilares</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="Personajes.html"><img src="images/FondoFamiliaKamado.jpg" class="w-75"
+                                                               alt="Familia Kamado"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark text-light shadow">La Familia Kamado</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="Personajes.html"><img src="images/12lunas.webp" class="w-75"
+                                                               alt="Las 12 Lunas"></a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="bg-dark text-light shadow">Las 12 Lunas</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDark"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-sm mt-5">
+                    <h2 id="DescubreHistoria" class="mb-3">Descubre su historia</h2>
+                    <a href="Historia.html"><img src="images/familliaKamado.jpg"
+                                                 class="img-thumbnail rounded-pill w-75 h-75"
+                                                 title="Familia Kamado"></a>
+                </div>
+
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm mt-3 mb-5">
+                    <h2 id="JuegaVideojuegos" class="mb-sm-4">Juega a sus videojuegos</h2>
+                    <a href="Videojuegos.html"><img src="images/DigitalEdition.png"
+                                                    title="Las Crónicas de Hinokami. Digital Edition"
+                                                    class="rounded-3 img-thumbnail"></a>
+                </div>
+
+                <div class="col-sm mt-3">
+                    <h2 id="Consultanoticias" class="mb-sm-4">Consulta las últimas noticias</h2>
+                    <a href="RecentNews.html"><img src="images/DemonSlayer.jpg" title="Demon Slayer"
+                                                   class="rounded-3 w-75 h-75 img-thumbnail"></a>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-sm mt-3 mb-5">
+                    <h2 id="ConsultaVotaciones" class="mb-sm-4">Consulta las votaciones</h2>
+                    <a href="Votaciones.html"><img src="images/Animes.jpg" title="Animes"
+                                                   class="rounded-3 w-75 h-75 img-thumbnail"></a>
+                </div>
+
+                <div class="col-sm mt-3">
+                    <h2 id="AñadeAnime" class="mb-sm-4">Añade tu anime favorito</h2>
+                    <a href="VotaAquí.html"><img src="images/AñadirAnimes.webp" title="Animes"
+                                                 class="rounded-3 w-75 h-75 img-thumbnail"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-2 bg-secondary text-center">
+            <h2 class="mt-5">Widgets</h2>
+            <div class="text-center ms-3 me-3 mt-4 shadow border border-3 border-light btn-outline-light p-2 text rounded-3 h6"
+                 id="clock">
+                <p id="fecha"></p>
+                <p id="reloj" class="h1"></p>
+            </div>
+            <button id="slideclock" class="btn-secondary text-center mt-2 mb-4 border border-2 rounded-pill">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </button>
+
+            <h2 class="mt-2 mb-4">Avisos</h2>
+            <p id="registeredusers" class="ms-3 me-3"></p>
+        </div>
+
+    </div>
+
+    <div class="row text-center bg-dark text-light">
+        <footer class="mt-4"><p>Autora: ©Selene Milanés Rodríguez</p>
+            <button id="estiradeinosuke" class="btn-outline-danger">Estira de Inosuke</button>
+            <div>
+                <img src="images/pinsinfondo.png" id="pin" title="Tanjiro e Inosuke"
+                     class="w-25 h-25 rounded-circle position-relative">
+            </div>
+            <p> ©DEMON SLAYER KIMETSU NO YAIBA by ©Koyoharu Gotoge</p>
+        </footer>
+    </div>
+
+</main>
+</body>
+</html>
